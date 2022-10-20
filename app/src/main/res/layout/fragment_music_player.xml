@@ -4,22 +4,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".MusicPlayerFragment">
+    tools:context=".musicplayer.MusicPlayerFragment">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:weightSum="12">
         <ListView
+            android:id="@+id/music_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="2"/>
         <com.google.android.exoplayer2.ui.StyledPlayerControlView
+            android:id="@+id/music_player"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="10"
             />
     </LinearLayout>
+
 
 
 
